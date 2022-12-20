@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Mono:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+nav {
+  text-transform: uppercase;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  padding: 15px 10px 15px 60px;
+}
+.logo {
+  width: 60px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  width: 50vw;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 23px;
+  font-size: 0.8rem;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+/* search bar */
+.search-bar input {
+  background-color: whitesmoke;
+  border-radius: 6px;
+  outline-color: whitesmoke;
+  width: 230px;
+  height: 34px;
+  margin-bottom: 2px;
+  padding-left: 10px;
+  border: 0px;
+}
+.search-bar input:focus {
+  outline-color: red;
+}
+.search-bar img {
+  width: 40px;
+  margin-top: -1px;
+  padding-top: 0px;
+  position: relative;
+  top: 15px;
+}
+
+.search-bar img:focus {
+  cursor: pointer;
+}
+
+/* designing right section of navbar */
+.right {
+  display: flex;
+  width: 175px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.right-logo {
+  height: 42px;
+}
+
+.right-logo:hover {
+  cursor: pointer;
+}
+
+/* sections */
+.home {
+  background-color: whitesmoke;
+  padding: 10px 0;
+}
+.section-img img {
+  width: 100%;
+}
+
+.section-img {
+  margin: 30px 0;
+}
+.content {
+  width: 80%;
+  display: block;
+  margin: auto;
+  /* border: 2px solid black; */
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 190px;
+  margin: 15px 10px;
+}
+.card:hover {
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  text-align: center;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+@media only screen and (max-width: 1230px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul {
+    width: auto;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    margin: 10px;
+  }
+
+  .search-bar input {
+    width: 190px;
+  }
+  .home {
+    padding: 0px;
+  }
+  .content {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+  .section-img {
+    margin: 5px 0;
+  }
+
+  .card {
+    width: 100px;
+  }
+  footer {
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
